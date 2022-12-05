@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script src="../../dist/main.js" defer></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="shortcut icon" type="x-icon" href="../assets/tab-icon.svg">
+    <title>Weather App</title>
+</head>
+<body>
+    <p id="title">Type the name of your city Here:</p>
+    <div class="location-search">
+        <!-- Discription -->
+        <div id = 'discription'>
+            <p id="location"></p>
+            <span class = 'text' id="discription_text"></span>
+        </div>
+
+        <!-- Search bar -->
+        <div id = 'search_bar'>
+            <input type="text" id="city" placeholder="Enter your location">
+            <button class="geolocation"><img src="../assets/location.svg" alt=""></button>
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="container">
+            <!-- date -->
+            <div id = 'weather_container'>
+                <span class="current_date text"></span>
+                <span class="current_time text"></span>
+            </div>
+
+            <!-- tempreture -->
+            <div id = 'tempreture'>
+                <span class = 'text temp'></span>
+                <button id="display">F</button>
+            </div>
+
+            <!-- Icon -->
+            <img src="" id="weather-icon" class="icon" alt="">
+        
+            <div class="informations">
+                <!-- Wind speed -->
+                <div id="wind">
+                    <span class="text">Wind speed: </span>
+                    <span class="speed"></span>
+                </div>
+    
+                <!-- Feels like -->
+                <div id="feeling">
+                    <span class="text">Feels Like: </span>
+                    <span class="feels"></span>
+                </div>
+    
+                <!-- Humidity level -->
+                <div id="humidity">
+                    <span class="text">Humidity Level: </span>
+                    <span class="level"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

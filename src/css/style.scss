@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    background: url("../assets/main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    #title{
+        position: absolute;
+        top: 30%;
+        font-size: larger;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+// styling the location-search section
+.location-search{
+    line-height: 2em;
+    text-align: center;
+    #location{
+        font-size: 1.5rem;
+    }
+    #discription_text{
+        font-size: 2rem;
+    }
+    #search_bar{
+        top: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        .geolocation{
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            box-shadow: 3px 2px 10px #777;
+            background-color: rgba(255, 255, 255, .5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 1.75em;
+                height: 1.75em;
+            }
+        }
+        .geolocation:hover{
+            background-color: rgba(255, 255, 255, .2);
+            cursor: pointer;
+        }
+        #city{
+            margin: 1em;
+            border: none;
+            border-bottom: 2px solid black;
+            width: 20em;
+            padding: 1em;
+            box-shadow: 3px 2px 10px #777;
+            background: rgba(255, 255, 255, .2);
+            border-radius: 10px;
+        }
+        #city:focus{
+            outline: none;
+            background: rgba(255, 255, 255, .4);
+            color: black;
+            font-weight: bolder;
+        }
+    }
+}
+
+// Styling the results section
+.results{
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 1px 1px 10px #000;
+    padding: 2%;
+    border-radius: 10px;
+    display: none;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        #tempreture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .temp{
+                font-size: larger;
+            }
+            #display{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, .7);
+                box-shadow: 1px 2px 3px #000;
+                border: none;
+                outline: none;
+                color: white;
+                font-weight: bold;
+            }
+            .informations{
+                text-align: right;
+            }
+        }
+    }
+}
